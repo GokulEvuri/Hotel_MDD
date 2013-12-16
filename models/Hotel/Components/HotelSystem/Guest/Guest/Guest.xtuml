@@ -1,0 +1,57 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("c8eb1f42-3cb8-48ba-9c4a-f5ae0f7b472e",
+	'Guest',
+	1,
+	'Guest',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("eb6a7dcc-1548-40d5-8eb6-6c0994d6d50d",
+	"c8eb1f42-3cb8-48ba-9c4a-f5ae0f7b472e");
+INSERT INTO O_BATTR
+	VALUES ("eb6a7dcc-1548-40d5-8eb6-6c0994d6d50d",
+	"c8eb1f42-3cb8-48ba-9c4a-f5ae0f7b472e");
+INSERT INTO O_ATTR
+	VALUES ("eb6a7dcc-1548-40d5-8eb6-6c0994d6d50d",
+	"c8eb1f42-3cb8-48ba-9c4a-f5ae0f7b472e",
+	"00000000-0000-0000-0000-000000000000",
+	'guest',
+	'',
+	'',
+	'guest',
+	0,
+	"db866af2-b9b3-444e-9971-fd6fd1e54729",
+	'',
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("db866af2-b9b3-444e-9971-fd6fd1e54729",
+	"00000000-0000-0000-0000-000000000000",
+	'Guest',
+	'',
+	'',
+	'../../DataTypes/DataTypes.xtuml');
+INSERT INTO O_ID
+	VALUES (0,
+	"c8eb1f42-3cb8-48ba-9c4a-f5ae0f7b472e");
+INSERT INTO O_ID
+	VALUES (1,
+	"c8eb1f42-3cb8-48ba-9c4a-f5ae0f7b472e");
+INSERT INTO O_ID
+	VALUES (2,
+	"c8eb1f42-3cb8-48ba-9c4a-f5ae0f7b472e");
+INSERT INTO PE_PE
+	VALUES ("c8eb1f42-3cb8-48ba-9c4a-f5ae0f7b472e",
+	1,
+	"17c5a9bd-27b1-4107-8b9a-9b6e3e6864a8",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("17c5a9bd-27b1-4107-8b9a-9b6e3e6864a8",
+	"00000000-0000-0000-0000-000000000000",
+	"8c44234c-8492-4e8f-a3de-ed0fb84ed0f4",
+	'Guest',
+	'',
+	0,
+	'../Guest.xtuml');

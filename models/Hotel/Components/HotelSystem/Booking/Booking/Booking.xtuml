@@ -1,0 +1,57 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("1632833e-63be-45af-a64a-3e85f6a383b8",
+	'Booking',
+	2,
+	'Booking',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("5c2605e4-5ddc-4919-81bf-44f611dedb4b",
+	"1632833e-63be-45af-a64a-3e85f6a383b8");
+INSERT INTO O_BATTR
+	VALUES ("5c2605e4-5ddc-4919-81bf-44f611dedb4b",
+	"1632833e-63be-45af-a64a-3e85f6a383b8");
+INSERT INTO O_ATTR
+	VALUES ("5c2605e4-5ddc-4919-81bf-44f611dedb4b",
+	"1632833e-63be-45af-a64a-3e85f6a383b8",
+	"00000000-0000-0000-0000-000000000000",
+	'booking',
+	'',
+	'',
+	'booking',
+	0,
+	"f5b28a95-3d15-42a3-b7b5-b781f05e9836",
+	'',
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("f5b28a95-3d15-42a3-b7b5-b781f05e9836",
+	"00000000-0000-0000-0000-000000000000",
+	'booking',
+	'',
+	'',
+	'../../DataTypes/DataTypes.xtuml');
+INSERT INTO O_ID
+	VALUES (0,
+	"1632833e-63be-45af-a64a-3e85f6a383b8");
+INSERT INTO O_ID
+	VALUES (1,
+	"1632833e-63be-45af-a64a-3e85f6a383b8");
+INSERT INTO O_ID
+	VALUES (2,
+	"1632833e-63be-45af-a64a-3e85f6a383b8");
+INSERT INTO PE_PE
+	VALUES ("1632833e-63be-45af-a64a-3e85f6a383b8",
+	1,
+	"8f757be7-ce78-4ba0-82f5-b4d6ca71b46e",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("8f757be7-ce78-4ba0-82f5-b4d6ca71b46e",
+	"00000000-0000-0000-0000-000000000000",
+	"8c44234c-8492-4e8f-a3de-ed0fb84ed0f4",
+	'Booking',
+	'',
+	0,
+	'../Booking.xtuml');

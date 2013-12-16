@@ -1,0 +1,109 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("23465b68-5644-464d-b969-9f27fb91878e",
+	'Customer',
+	1,
+	'Customer',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("0f6b3696-1b0b-4d53-b95d-b2a3eec1dfcc",
+	"23465b68-5644-464d-b969-9f27fb91878e",
+	'get_guestData',
+	'',
+	"db866af2-b9b3-444e-9971-fd6fd1e54729",
+	1,
+	'',
+	3,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_DT_PROXY
+	VALUES ("db866af2-b9b3-444e-9971-fd6fd1e54729",
+	"00000000-0000-0000-0000-000000000000",
+	'Guest',
+	'',
+	'',
+	'../../DataTypes/DataTypes.xtuml');
+INSERT INTO O_TFR
+	VALUES ("fa447703-1b5f-4301-9db7-223748cc763c",
+	"23465b68-5644-464d-b969-9f27fb91878e",
+	'set_guestData',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'self.guest.name = param.name;
+',
+	1,
+	'',
+	"0f6b3696-1b0b-4d53-b95d-b2a3eec1dfcc");
+INSERT INTO O_TPARM
+	VALUES ("784f7a16-9dc1-4bde-ae4d-94979d6ef665",
+	"fa447703-1b5f-4301-9db7-223748cc763c",
+	'name',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("7213bfc3-5320-4dbf-9f31-839ba14ddd81",
+	"23465b68-5644-464d-b969-9f27fb91878e",
+	'make_booking',
+	'',
+	"f5b28a95-3d15-42a3-b7b5-b781f05e9836",
+	1,
+	'create object instance gst of Guest;
+gst.guest.name = self.guest.name;
+return booking;',
+	1,
+	'',
+	"fa447703-1b5f-4301-9db7-223748cc763c");
+INSERT INTO S_DT_PROXY
+	VALUES ("f5b28a95-3d15-42a3-b7b5-b781f05e9836",
+	"00000000-0000-0000-0000-000000000000",
+	'booking',
+	'',
+	'',
+	'../../DataTypes/DataTypes.xtuml');
+INSERT INTO O_NBATTR
+	VALUES ("90402399-8b27-48e4-a0d0-2e61abc62af7",
+	"23465b68-5644-464d-b969-9f27fb91878e");
+INSERT INTO O_BATTR
+	VALUES ("90402399-8b27-48e4-a0d0-2e61abc62af7",
+	"23465b68-5644-464d-b969-9f27fb91878e");
+INSERT INTO O_ATTR
+	VALUES ("90402399-8b27-48e4-a0d0-2e61abc62af7",
+	"23465b68-5644-464d-b969-9f27fb91878e",
+	"00000000-0000-0000-0000-000000000000",
+	'guest',
+	'',
+	'',
+	'guest',
+	0,
+	"db866af2-b9b3-444e-9971-fd6fd1e54729",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"23465b68-5644-464d-b969-9f27fb91878e");
+INSERT INTO O_ID
+	VALUES (1,
+	"23465b68-5644-464d-b969-9f27fb91878e");
+INSERT INTO O_ID
+	VALUES (2,
+	"23465b68-5644-464d-b969-9f27fb91878e");
+INSERT INTO PE_PE
+	VALUES ("23465b68-5644-464d-b969-9f27fb91878e",
+	1,
+	"69d35fa4-101c-4667-8c41-f9b33400ddc7",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("69d35fa4-101c-4667-8c41-f9b33400ddc7",
+	"00000000-0000-0000-0000-000000000000",
+	"8c44234c-8492-4e8f-a3de-ed0fb84ed0f4",
+	'Customer',
+	'',
+	0,
+	'../Customer.xtuml');

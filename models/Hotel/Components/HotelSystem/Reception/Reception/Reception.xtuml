@@ -1,0 +1,82 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("08a21066-7e99-4924-b05a-355647f6b00a",
+	'Reception',
+	1,
+	'Reception',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("a689901c-ffff-4247-9c9e-5b6e20d74e89",
+	"08a21066-7e99-4924-b05a-355647f6b00a",
+	'checkin',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select any booking_ins from instances of Booking where selected.booking.bookingId == param.guest.booking.bookingId;
+// if( TIM::get_day(booking_ins.booking.requestedCheckinDate)
+// check if current date is inbetween requested checkin and out date
+param.guest.status = 1;',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TPARM
+	VALUES ("c8e0c15e-17a1-4e3a-8dfd-88f0197281c7",
+	"a689901c-ffff-4247-9c9e-5b6e20d74e89",
+	'guest',
+	"db866af2-b9b3-444e-9971-fd6fd1e54729",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("db866af2-b9b3-444e-9971-fd6fd1e54729",
+	"00000000-0000-0000-0000-000000000000",
+	'Guest',
+	'',
+	'',
+	'../../DataTypes/DataTypes.xtuml');
+INSERT INTO O_TFR
+	VALUES ("f5d5c564-84a2-4121-82e7-d9b6375a2f35",
+	"08a21066-7e99-4924-b05a-355647f6b00a",
+	'checkout',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	1,
+	'',
+	"a689901c-ffff-4247-9c9e-5b6e20d74e89");
+INSERT INTO O_TPARM
+	VALUES ("3500d0c1-fa5d-4bce-a8b1-1b19b2441ba3",
+	"f5d5c564-84a2-4121-82e7-d9b6375a2f35",
+	'guest',
+	"db866af2-b9b3-444e-9971-fd6fd1e54729",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"08a21066-7e99-4924-b05a-355647f6b00a");
+INSERT INTO O_ID
+	VALUES (1,
+	"08a21066-7e99-4924-b05a-355647f6b00a");
+INSERT INTO O_ID
+	VALUES (2,
+	"08a21066-7e99-4924-b05a-355647f6b00a");
+INSERT INTO PE_PE
+	VALUES ("08a21066-7e99-4924-b05a-355647f6b00a",
+	1,
+	"57e8ea24-9107-4f0f-a262-c113d7fe23cf",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("57e8ea24-9107-4f0f-a262-c113d7fe23cf",
+	"00000000-0000-0000-0000-000000000000",
+	"8c44234c-8492-4e8f-a3de-ed0fb84ed0f4",
+	'Reception',
+	'',
+	0,
+	'../Reception.xtuml');

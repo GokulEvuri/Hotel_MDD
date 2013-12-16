@@ -1,0 +1,32 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("c5bb2f0c-53ed-4c8e-8459-99254c70cd6d",
+	'BookingLog',
+	1,
+	'BookingLog',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_ID
+	VALUES (0,
+	"c5bb2f0c-53ed-4c8e-8459-99254c70cd6d");
+INSERT INTO O_ID
+	VALUES (1,
+	"c5bb2f0c-53ed-4c8e-8459-99254c70cd6d");
+INSERT INTO O_ID
+	VALUES (2,
+	"c5bb2f0c-53ed-4c8e-8459-99254c70cd6d");
+INSERT INTO PE_PE
+	VALUES ("c5bb2f0c-53ed-4c8e-8459-99254c70cd6d",
+	1,
+	"8f757be7-ce78-4ba0-82f5-b4d6ca71b46e",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("8f757be7-ce78-4ba0-82f5-b4d6ca71b46e",
+	"00000000-0000-0000-0000-000000000000",
+	"8c44234c-8492-4e8f-a3de-ed0fb84ed0f4",
+	'Booking',
+	'',
+	0,
+	'../Booking.xtuml');
