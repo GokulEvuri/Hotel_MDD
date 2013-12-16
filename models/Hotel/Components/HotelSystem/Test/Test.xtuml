@@ -47,8 +47,10 @@ create object instance cust of Customer;
 
 //
 
-bookingID = cust.make_booking(nameGuest:"Gokul");',
-	"ba5eda7a-def5-0000-0000-000000000000",
+bookingID = cust.make_booking(nameGuest:"Gokul");
+
+return bookingID;',
+	"ba5eda7a-def5-0000-0000-000000000002",
 	1,
 	'');
 INSERT INTO PE_PE
@@ -62,8 +64,11 @@ INSERT INTO S_SYNC
 	"00000000-0000-0000-0000-000000000000",
 	'test_makeCheckIn',
 	'',
-	'',
-	"ba5eda7a-def5-0000-0000-000000000000",
+	'bookingID = ::test_makeBooking();
+select any recept_ins from instances of Reception;
+recept_ins.checkin(bookingID:bookingID);
+return bookingID;',
+	"ba5eda7a-def5-0000-0000-000000000002",
 	1,
 	'');
 INSERT INTO PE_PE
@@ -77,7 +82,10 @@ INSERT INTO S_SYNC
 	"00000000-0000-0000-0000-000000000000",
 	'test_makeCheckOut',
 	'',
-	'',
+	'bokingID = ::test_makeCheckIn();
+
+select any recept_ins from instances of Reception;
+recept_ins.checkout(bookingID:bokingID);',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'');

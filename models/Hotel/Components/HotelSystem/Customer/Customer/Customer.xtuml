@@ -23,7 +23,7 @@ create object instance guest1 of Guest;
 
 //if(not_empty bookingLog)
 		bookng = bookingLog.createBookingInstance();
-		guest1.set_guestData(name:param.nameGuest,status:0,booking:bookng);
+		guest1.set_guestData(name:param.nameGuest,status:"Not Checked In",booking:bookng);
 	 	
 //end if;
 

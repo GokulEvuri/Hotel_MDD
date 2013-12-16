@@ -138,9 +138,12 @@ INSERT INTO S_MBR
 INSERT INTO S_MBR
 	VALUES ("0aa821f1-725c-4dc2-86a1-4591b1d17116",
 	'status',
-	'',
+	'The status has three different values, representing different states of guest
+0-> Guest has a booking but, hasn''t checked in yet.
+1-> Guest has check-in status.
+2-> Guest has check-out status.',
 	"db866af2-b9b3-444e-9971-fd6fd1e54729",
-	"ba5eda7a-def5-0000-0000-000000000002",
+	"ba5eda7a-def5-0000-0000-000000000004",
 	"74410b01-dbb1-471a-bb19-93b7bb5643ff",
 	'');
 INSERT INTO S_MBR

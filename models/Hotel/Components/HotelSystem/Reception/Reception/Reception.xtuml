@@ -14,29 +14,24 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
-	'select any booking_ins from instances of Booking where selected.booking.bookingId == param.guest.booking.bookingId;
+	'select any guest_ins from instances of Guest where selected.guest.booking.bookingId == param.bookingID;
+
+
 // if( TIM::get_day(booking_ins.booking.requestedCheckinDate)
 // check if current date is inbetween requested checkin and out date
-param.guest.status = 1;',
+guest_ins.guest.status = "Checked In";',
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_TPARM
 	VALUES ("c8e0c15e-17a1-4e3a-8dfd-88f0197281c7",
 	"a689901c-ffff-4247-9c9e-5b6e20d74e89",
-	'guest',
-	"db866af2-b9b3-444e-9971-fd6fd1e54729",
+	'bookingID',
+	"ba5eda7a-def5-0000-0000-000000000002",
 	0,
 	'',
 	"00000000-0000-0000-0000-000000000000",
 	'');
-INSERT INTO S_DT_PROXY
-	VALUES ("db866af2-b9b3-444e-9971-fd6fd1e54729",
-	"00000000-0000-0000-0000-000000000000",
-	'Guest',
-	'',
-	'',
-	'../../DataTypes/DataTypes.xtuml');
 INSERT INTO O_TFR
 	VALUES ("f5d5c564-84a2-4121-82e7-d9b6375a2f35",
 	"08a21066-7e99-4924-b05a-355647f6b00a",
@@ -51,8 +46,8 @@ INSERT INTO O_TFR
 INSERT INTO O_TPARM
 	VALUES ("3500d0c1-fa5d-4bce-a8b1-1b19b2441ba3",
 	"f5d5c564-84a2-4121-82e7-d9b6375a2f35",
-	'guest',
-	"db866af2-b9b3-444e-9971-fd6fd1e54729",
+	'bookingID',
+	"ba5eda7a-def5-0000-0000-000000000002",
 	0,
 	'',
 	"00000000-0000-0000-0000-000000000000",
