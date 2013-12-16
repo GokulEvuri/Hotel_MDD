@@ -7,6 +7,71 @@ INSERT INTO O_OBJ
 	'Guest',
 	'',
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("aa18e31f-bb9e-45d4-9c3c-ba79677051ac",
+	"c8eb1f42-3cb8-48ba-9c4a-f5ae0f7b472e",
+	'get_guestData',
+	'',
+	"db866af2-b9b3-444e-9971-fd6fd1e54729",
+	1,
+	'',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_DT_PROXY
+	VALUES ("db866af2-b9b3-444e-9971-fd6fd1e54729",
+	"00000000-0000-0000-0000-000000000000",
+	'Guest',
+	'',
+	'',
+	'../../DataTypes/DataTypes.xtuml');
+INSERT INTO O_TFR
+	VALUES ("c549ebc0-cd47-43fc-a0bd-f67cfce78625",
+	"c8eb1f42-3cb8-48ba-9c4a-f5ae0f7b472e",
+	'set_guestData',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'self.guest.name = param.name;
+self.guest.status = param.status;
+self.guest.booking = param.booking;',
+	1,
+	'',
+	"aa18e31f-bb9e-45d4-9c3c-ba79677051ac");
+INSERT INTO O_TPARM
+	VALUES ("ae7d2dec-2a0a-4bab-bc58-60bd5c6d5787",
+	"c549ebc0-cd47-43fc-a0bd-f67cfce78625",
+	'name',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TPARM
+	VALUES ("bb9906e5-691d-410e-a824-42ae2b052733",
+	"c549ebc0-cd47-43fc-a0bd-f67cfce78625",
+	'status',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"ae7d2dec-2a0a-4bab-bc58-60bd5c6d5787",
+	'');
+INSERT INTO O_TPARM
+	VALUES ("91959f62-b758-4403-85ab-48ef58873fdf",
+	"c549ebc0-cd47-43fc-a0bd-f67cfce78625",
+	'booking',
+	"f5b28a95-3d15-42a3-b7b5-b781f05e9836",
+	1,
+	'',
+	"bb9906e5-691d-410e-a824-42ae2b052733",
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("f5b28a95-3d15-42a3-b7b5-b781f05e9836",
+	"00000000-0000-0000-0000-000000000000",
+	'booking',
+	'',
+	'',
+	'../../DataTypes/DataTypes.xtuml');
 INSERT INTO O_NBATTR
 	VALUES ("eb6a7dcc-1548-40d5-8eb6-6c0994d6d50d",
 	"c8eb1f42-3cb8-48ba-9c4a-f5ae0f7b472e");
@@ -25,13 +90,6 @@ INSERT INTO O_ATTR
 	"db866af2-b9b3-444e-9971-fd6fd1e54729",
 	'',
 	'');
-INSERT INTO S_DT_PROXY
-	VALUES ("db866af2-b9b3-444e-9971-fd6fd1e54729",
-	"00000000-0000-0000-0000-000000000000",
-	'Guest',
-	'',
-	'',
-	'../../DataTypes/DataTypes.xtuml');
 INSERT INTO O_ID
 	VALUES (0,
 	"c8eb1f42-3cb8-48ba-9c4a-f5ae0f7b472e");

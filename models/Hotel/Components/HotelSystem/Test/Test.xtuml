@@ -38,9 +38,18 @@ INSERT INTO S_SYNC
 	"00000000-0000-0000-0000-000000000000",
 	'test_makeBooking',
 	'',
-	'',
+	'// One time object creation
+create object instance recep of Reception;
+create object instance bookingLog of BookingLog;
+
+// Can have any number of customers, so any number of instances
+create object instance cust of Customer;
+
+//
+
+bookingID = cust.make_booking(nameGuest:"Gokul");',
 	"ba5eda7a-def5-0000-0000-000000000000",
-	3,
+	1,
 	'');
 INSERT INTO PE_PE
 	VALUES ("ce452b2d-77d3-4912-9b7a-589fc54f230d",
@@ -55,7 +64,7 @@ INSERT INTO S_SYNC
 	'',
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
-	3,
+	1,
 	'');
 INSERT INTO PE_PE
 	VALUES ("67af51f7-00da-47dc-80cb-b0cf0f5633e8",
@@ -70,7 +79,7 @@ INSERT INTO S_SYNC
 	'',
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
-	3,
+	1,
 	'');
 INSERT INTO PE_PE
 	VALUES ("d77e746b-a881-478e-9838-2de314800262",

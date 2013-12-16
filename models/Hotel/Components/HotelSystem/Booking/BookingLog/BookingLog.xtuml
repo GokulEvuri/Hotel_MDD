@@ -5,8 +5,50 @@ INSERT INTO O_OBJ
 	'BookingLog',
 	1,
 	'BookingLog',
+	'self.bookingCount = 0;',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("7d70147c-8f0a-4294-a46e-fd2623deab73",
+	"c5bb2f0c-53ed-4c8e-8459-99254c70cd6d",
+	'createBookingInstance',
+	'',
+	"f5b28a95-3d15-42a3-b7b5-b781f05e9836",
+	1,
+	'//Calling this function creates a instance of Booking class
+//Gives ID to the booking using bookingCount variable
+//And incriments the booking count.
+create object instance bking of Booking;
+bking.booking.bookingId = self.bookingCount+1;
+self.bookingCount = self.bookingCount+1;
+return bking.booking;',
+	1,
 	'',
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_DT_PROXY
+	VALUES ("f5b28a95-3d15-42a3-b7b5-b781f05e9836",
+	"00000000-0000-0000-0000-000000000000",
+	'booking',
+	'',
+	'',
+	'../../DataTypes/DataTypes.xtuml');
+INSERT INTO O_NBATTR
+	VALUES ("d52e9f40-c9d2-4f4b-ab60-26e3dbaa5d44",
+	"c5bb2f0c-53ed-4c8e-8459-99254c70cd6d");
+INSERT INTO O_BATTR
+	VALUES ("d52e9f40-c9d2-4f4b-ab60-26e3dbaa5d44",
+	"c5bb2f0c-53ed-4c8e-8459-99254c70cd6d");
+INSERT INTO O_ATTR
+	VALUES ("d52e9f40-c9d2-4f4b-ab60-26e3dbaa5d44",
+	"c5bb2f0c-53ed-4c8e-8459-99254c70cd6d",
+	"00000000-0000-0000-0000-000000000000",
+	'bookingCount',
+	'',
+	'',
+	'bookingCount',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
 INSERT INTO O_ID
 	VALUES (0,
 	"c5bb2f0c-53ed-4c8e-8459-99254c70cd6d");
